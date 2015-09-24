@@ -6,6 +6,7 @@ buildscript {
         springBootVersion = '1.2.4.RELEASE'
         springCloudVersion = '1.0.2.RELEASE'
         dockerVersion = '1.2'
+        microInfraSpringBaseVersion = '0.9.5'
     }
     repositories {
         mavenLocal()
@@ -48,6 +49,7 @@ repositories {
 
 dependencies {
     compile "org.springframework.cloud:spring-cloud-starter-hystrix:${springCloudVersion}"
+    compile "com.ofg:micro-infra-spring-base:${microInfraSpringBaseVersion}"
     compile "org.springframework.cloud:spring-cloud-starter-eureka:${springCloudVersion}"
     compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
     compile "org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}"

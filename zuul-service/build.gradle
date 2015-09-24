@@ -6,6 +6,7 @@ buildscript {
         springCloudVersion = '1.0.2.RELEASE'
         groovyVersion = '2.4.3'
         dockerVersion = '1.2'
+        microInfraSpringBaseVersion = '0.9.5'
     }
     repositories {
         mavenLocal()
@@ -51,6 +52,7 @@ repositories {
 
 dependencies {
     compile "org.codehaus.groovy:groovy-all:${groovyVersion}"
+    compile "com.ofg:micro-infra-spring-base:${microInfraSpringBaseVersion}"
     compile "org.springframework.cloud:spring-cloud-starter-zuul:${springCloudVersion}"
     compile "org.springframework.cloud:spring-cloud-starter-eureka:${springCloudVersion}"
     compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"

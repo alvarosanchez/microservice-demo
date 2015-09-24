@@ -1,3 +1,6 @@
+info:
+  component: price-service
+
 server:
   port: 0
 
