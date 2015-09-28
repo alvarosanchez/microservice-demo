@@ -1,5 +1,4 @@
 group 'microservicedemo'
-version '1.0-SNAPSHOT'
 
 buildscript {
     ext {
