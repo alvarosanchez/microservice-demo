@@ -6,7 +6,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: docker
   client:
     registerWithEureka: false
     fetchRegistry: false
